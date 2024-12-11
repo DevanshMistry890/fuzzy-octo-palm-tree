@@ -241,7 +241,7 @@ nav a:hover::after {
 
 nav a:hover {
     color: #31344b;
-    background-color: #e6e7ee;
+    background-color: var(--sf2);
     border-color: var(--bdcolor);
     box-shadow: 0 2px 10px #b8b9be;
     padding: 10px 15px;
@@ -257,7 +257,41 @@ aside {
     grid-area: aside;
     background: var(--sf4);
     box-shadow: var(--shadow-inset);
-    padding: 10px;
+    padding: 2vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+aside li {
+    margin: 0;
+    position: relative;
+    display: block;
+    border: 1px dashed;
+    margin-bottom: 2vh;
+    padding: 10px 2px;
+    border-radius: 4px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside li:hover {
+    color: #31344b;
+    background-color: var(--sf2);
+    border-color: var(--bdcolor);
+    box-shadow: 0 2px 10px #b8b9be;
+    padding: 10px 15px;
 }
 
 footer {
