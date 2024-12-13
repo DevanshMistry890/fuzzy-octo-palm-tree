@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>My Portfolio</title>
-    <meta name="title" content="My Portfolio">
+    <title>VR Solutions</title>
+    <meta name="title" content="VR Solutions">
     <meta name="description" content="Portfolio">
     <meta name="author" content="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/ar.svg" type="image/svg+xml">
 </head>
 
 <body>
@@ -28,7 +29,14 @@
     <main class="index-main">
         <section class="ani-slideInSide">
             <div>
-                <img src="./img/v1.png" class="ani-zoom">
+                <picture>
+                    <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                    ./img/v1_ad8stf_c_scale,w_200.png 200w,
+                    ./img/v1_ad8stf_c_scale,w_654.png 654w,
+                    ./img/v1_ad8stf_c_scale,w_982.png 982w,
+                    ./img/v1_ad8stf_c_scale,w_1400.png 1400w" src="./img/v1_ad8stf_c_scale,w_1400.png"
+                        alt="person using vr specs" class="ani-zoom">
+                </picture>
             </div>
             <div>
                 <h1>Our Company</h1>
@@ -44,24 +52,45 @@
                     immersive realities, all while maintaining a positive, forward-thinking environment.</p>
             </div>
             <div>
-                <img src="./img/v2.png">
+                <picture>
+                    <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                    ./img/v2_q8isp3_c_scale,w_200.png 200w,
+                    ./img/v2_q8isp3_c_scale,w_461.png 461w,
+                    ./img/v2_q8isp3_c_scale,w_676.png 676w,
+                    ./img/v2_q8isp3_c_scale,w_851.png 851w,
+                    ./img/v2_q8isp3_c_scale,w_1028.png 1028w,
+                    ./img/v2_q8isp3_c_scale,w_1172.png 1172w,
+                    ./img/v2_q8isp3_c_scale,w_1400.png 1400w" src="./img/v2_q8isp3_c_scale,w_1400.png"
+                        alt="illustration of Girl using VR technology">
+                </picture>
             </div>
         </section>
         <section class="ani-slideInSide">
             <div>
-                <img src="./img/v3.png" class="ani-zoom">
+                <picture>
+                    <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                    ./img/v3_ummkda_c_scale,w_200.png 200w,
+                    ./img/v3_ummkda_c_scale,w_538.png 538w,
+                    ./img/v3_ummkda_c_scale,w_794.png 794w,
+                    ./img/v3_ummkda_c_scale,w_1061.png 1061w,
+                    ./img/v3_ummkda_c_scale,w_1400.png 1400w" src="./img/v3_ummkda_c_scale,w_1400.png"
+                        alt="illustration of person using VR technology" class="ani-zoom">
+                </picture>
             </div>
             <div>
                 <h1>Future of Visualization</h1>
-                <p>With our products, unlock another dimension. 
+                <p>With our products, unlock another dimension.
                     Our cutting-edge technology allows you to experience immersive visualizations like never before.</p>
             </div>
         </section>
         <section id="hero" class="ani-slideInSide mb-5">
             <div class="card">
                 <h1>Change The Game</h1>
-                <p>With our solutions, empower yourself to visualize, create and collaborate in ways never before possible.</p>
-                <a href="#"><button class="btn-primary mt-3 blue" type="button">  Explore Our Solutions  </button></a>
+                <p>With our solutions, empower yourself to visualize, create and collaborate in ways never before
+                    possible.</p>
+                <a href="#">
+                    <button class="btn-primary mt-3 blue" type="button"> <i class="fas fa-cubes"></i> Explore
+                        Our Solutions </button></a>
             </div>
         </section>
     </main>
@@ -69,10 +98,18 @@
     <aside class="ani-slideInSide">
         <h2>Quick Grab</h2>
         <ul>
-            <a href="#"><li><i class="fas fa-vr-cardboard"></i> VR SPECS </li></a>
-            <a href="#"><li><i class="fab fa-laravel"></i> LAB </li></a>
-            <a href="#"><li><i class="fas fa-flask"></i> FLASK </li></a>
-            <a href="#"><li><i class="fab fa-uncharted"></i> APP </li></a>
+            <a href="#">
+                <li><i class="fas fa-vr-cardboard"></i> VR SPECS </li>
+            </a>
+            <a href="#">
+                <li><i class="fab fa-laravel"></i> LAB </li>
+            </a>
+            <a href="#">
+                <li><i class="fas fa-flask"></i> FLASK </li>
+            </a>
+            <a href="#">
+                <li><i class="fab fa-uncharted"></i> APP </li>
+            </a>
         </ul>
     </aside>
 
