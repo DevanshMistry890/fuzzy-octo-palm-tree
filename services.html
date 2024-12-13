@@ -1,71 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Services - Occlusion VR Solutions</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="title" content="My Portfolio" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <h1>Occlusion VR Solutions</h1>
-    </header>
 
+  <body>
+    <header class="ani-slideInTop header">
+      <h2>Services</h2>
+      <div class="vertical-divider"></div>
+      <div>
+        <h1>Occlusion VR Solutions</h1>
+        <h3>Redefining Reality, One Vision at a Time</h3>
+      </div>
+    </header>
     <nav>
-      <a href="/">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li>
+          <a href="./index.html" data-details="Home"
+            ><i class="fas fa-home"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./about.html" data-details="About"
+            ><i class="fas fa-info-circle"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./services.html" data-details="Services" class="active"
+            ><i class="fas fa-layer-group"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" data-details="Contact"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
     </nav>
 
-    <main role="main">
-      <section>
-        <div class="surface3 rad-shadow">
-          <h2>Architectural VR Solutions</h2>
-          <p>
-            Transform architectural design with immersive VR walkthroughs. Explore, modify, and experience
-            architectural spaces before construction, enabling precise visualization and collaborative design.
-          </p>
+    <main class=" ">
+      <div class="ani-blurin service-grid" id="serviceGrid">
+        <div class="service-item">
+          <img src="./img/arch.png" alt="service n image" />
+          <h6>Service n</h6>
         </div>
-
-        <div class="surface2 rad-shadow">
-          <h2>Biological Research VR</h2>
-          <p>
-            Unlock microscopic worlds through advanced 3D visualization. Our VR platforms enable researchers
-            to interact with complex biological systems, facilitating deeper understanding and groundbreaking
-            discoveries.
-          </p>
+        <div class="service-item">
+          <img src="./img/biology.png" alt="service n image" />
+          <h6>Service n</h6>
         </div>
-
-        <div class="surface4 rad-shadow">
-          <h2>Custom VR Spaces</h2>
-          <p>
-            Tailored virtual reality solutions for unique industry challenges. We develop specialized VR
-            environments that enhance workflow, productivity, and innovation across diverse professional
-            domains.
-          </p>
+        <div class="service-item">
+          <img src="./img/custom.png" alt="service n image" />
+          <h6>Service n</h6>
         </div>
-
-        <div class="surface1 rad-shadow">
-          <h2>Training and Simulation</h2>
-          <p>
-            Create immersive training environments that replicate complex scenarios. Our VR simulations
-            provide safe, interactive learning experiences for professionals in high-stakes and technical
-            fields.
-          </p>
+      </div>
+      </div>
+      <section id="service1" class="ani-slideInSide  px-3">
+        <div class="service-detail">
+          <div>
+            <h1></h1>
+            <p>
+            
+            </p>
+          </div>
+         
+          <div><img src="" alt=""></div>
+        </div>
+      </section>
+      <section id="service2" class="ani-slideInTop  px-3">
+        <div class="service-detail flex-column">
+          <div><img src="" alt=""></div>
+          <div>
+            <h1></h1>
+            <p>
+            
+            </p>
+          </div>
+         
+        </div>
+      </section>
+      <section id="service3" class="ani-slideInRightSide  px-3">
+        <div class="service-detail">
+          <div><img src="" alt=""></div>
+          <div>
+            <h1></h1>
+            <p>
+            
+            </p>
+          </div>
+         
         </div>
       </section>
     </main>
 
-    <aside>
-      <h3>Service Highlights</h3>
+    <aside class="ani-slideInSide">
+      <h2>Quick Grab</h2>
       <ul>
-        <li>Device Compatibility</li>
-        <li>Custom Development</li>
-        <li>Consultation Services</li>
+        <a href="#"
+          ><li><i class="fas fa-vr-cardboard"></i> VR SPECS</li></a
+        >
+        <a href="#"
+          ><li><i class="fab fa-laravel"></i> LAB</li></a
+        >
+        <a href="#"
+          ><li><i class="fas fa-flask"></i> FLASK</li></a
+        >
+        <a href="#"
+          ><li><i class="fab fa-uncharted"></i> APP</li></a
+        >
       </ul>
     </aside>
 
-    <footer>© 2024 Occlusion VR Solutions. All rights reserved.</footer>
+    <footer>
+      <p>&copy; 2024 Nnamdi Ogbu. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/42ad3f7235.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/services.js"></script>
   </body>
 </html>
