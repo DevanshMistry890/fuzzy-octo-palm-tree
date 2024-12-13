@@ -797,22 +797,42 @@ p {
 
 /* About (Nnamdi Ogbu) */
 .index-main .about {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 24px;
-  }
+    padding: 16px;
+}
 .index-main img {
-    height: 450px !important;
-    width: 550px !important;
+    max-width: 100%;
+    height: auto;
     -o-object-fit: contain;
        object-fit: contain;
     margin: 24px;
     z-index: 1;
     position: relative;
-  }
+}
+
+.index-main section div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
   .index-main section:not(#hero) div:first-child {
     min-height: 460px !important;
     display: -webkit-box;
@@ -839,6 +859,52 @@ p {
         -ms-transform: scale(1.1);
             transform: scale(1.1);
   }
+
+  @media (min-width: 600px) {
+    .index-main .about {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .index-main section div {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        padding: 16px;
+    }
+
+    .index-main img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .index-main .description {
+        text-align: left;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .index-main .about {
+        gap: 36px;
+    }
+
+    .index-main section div {
+        padding: 24px;
+    }
+
+    .index-main img {
+        max-width: 60%;
+    }
+}
   
   
   /* Services (Nnamdi Ogbu) */
@@ -854,32 +920,43 @@ p {
             justify-content: center;
   }
   
-  .vertical-divider {
-    width: 1px;
-    border: 1px solid var(--text1);
-    height: 100%;
-    margin: 0 16px;
-  }
-  
   .service-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 16px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 36px;
-    margin-bottom: 36px;
-  }
+    padding: 16px;
+}
   
   .service-item {
     border: 1px dashed var(--text1);
     border-radius: var(--border-radius);
     padding: 8px;
     width: 300px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% - 32px);
+            flex: 1 1 calc(100% - 32px);
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: normal;
+    padding: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transition: font-weight 1s linear, -webkit-transform 1s linear, -webkit-box-shadow 1s linear;
     transition: font-weight 1s linear, -webkit-transform 1s linear, -webkit-box-shadow 1s linear;
     -o-transition: font-weight 1s linear, transform 1s linear, box-shadow 1s linear;
@@ -904,37 +981,80 @@ p {
             box-shadow: 0 0 20px #0000005e;
   }
   .service-item img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 150px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin-bottom: 8px;
-  }
+}
   .service-item h6 {
     font-size: 20px;
   }
   .service-detail {
-    display: -webkit-box !important    ;
-    display: -ms-flexbox !important    ;
-    display: flex !important    ;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    gap: 36px;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  .service-detail img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%;
-    width: 500px;
-  }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+}
+.service-detail img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+}
+
+@media (min-width: 600px) {
+    .service-grid {
+        gap: 24px;
+    }
+
+    .service-item {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 calc(50% - 32px);
+                flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+
+    .service-detail {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .service-detail img {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .service-grid {
+        gap: 36px;
+    }
+
+    .service-item {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 calc(33.33% - 32px);
+                flex: 1 1 calc(33.33% - 32px);
+        max-width: calc(33.33% - 32px);
+    }
+
+    .service-detail {
+        gap: 48px;
+    }
+
+    .service-detail img {
+        max-width: 40%;
+    }
+}
   
   .px-3 {
     padding: 0 30px;
