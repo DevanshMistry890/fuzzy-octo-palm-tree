@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&display=swap');
 
+/* 
+  Browser Compatibility Testing Information:
+  - Tested in: Mozilla Firefox (Version 132) on Windows 11 (Desktop)
+  - Tested in: Google Chrome (Version 130) on Windows 11 (Desktop)
+  - Tested in: Opera (Version 114) on Windows 11 (Desktop)
+  - Platforms: Desktop (Windows 11), Mobile (Samsung Galaxy, iPad Mini)
+  
+  Layout verified on the latest versions of Firefox, Chrome, and Opera for Windows 11, 
+  as well as mobile browsers for Galaxy and iPad Mini.
+
+  No layout issues detected on any of the platforms. The layout is responsive and functions correctly across all screen sizes.
+  - Tested on mobile browsers: Chrome and Firefox on Samsung Galaxy (works perfect)
+  - Tested on tablet browsers: Safari and Chrome on iPad Mini (works perfect)
+  - No horizontal overflow, broken grid layouts, or other layout issues observed.
+
+  The layout is fully responsive and works as intended across desktop and mobile devices.
+*/
+
+/* © copy Devansh Mistry | Do not use css to any other project */
+
 html {
     /* color foundation */
     --cf-hue: 600;
@@ -218,6 +238,7 @@ aside li {
 
 aside a {
     text-decoration: none;
+    display: block;
 }
 
 i {
@@ -228,10 +249,15 @@ footer {
     grid-area: footer;
     background: var(--sf1);
     padding: 10px;
+    font-size: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+footer p {
+    font-size: 1.1rem !important;
 }
 
 h1,
@@ -274,14 +300,11 @@ h3,
         font-size: calc(1.325rem + 0.9vw);
     }
 
-    ;
-
     h1,
     .h1 {
         font-size: calc(1.375rem + 1.5vw);
     }
 
-    ;
 
     h3,
     .h3 {
@@ -722,7 +745,7 @@ p {
     }
 
     nav a:hover {
-        color: #31344b;
+        color: var(--text1);
         background-color: var(--sf2);
         border-color: var(--bdcolor);
         box-shadow: 0 2px 10px #b8b9be;
@@ -730,7 +753,7 @@ p {
     }
 
     aside li:hover {
-        color: #31344b;
+        color: var(--text1);
         background-color: var(--sf2);
         border-color: var(--bdcolor);
         box-shadow: 0 2px 10px #b8b9be;
